@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeSpecter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0f1f, #1a0033);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(15, 15, 31, 0.9);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      background: linear-gradient(90deg, #ff8a00, #e52e71);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff8a00;
+    }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, #ff8a00, #e52e71);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    .typewriter {
+      font-size: 1.2rem;
+      border-right: 2px solid #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 4s steps(30, end) forwards, blink 0.7s infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    .btn {
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background: linear-gradient(90deg, #ff8a00, #e52e71);
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      box-shadow: 0 0 15px #e52e71;
+    }
+
+    /* Sections */
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 5rem 1rem;
+      text-align: center;
+    }
+
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #ff8a00, #e52e71);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 12px;
+      margin: 1rem 0;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(255, 138, 0, 0.5);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(15, 15, 31, 0.9);
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CodeSpecter</h1>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h2>CodeSpecter</h2>
+    <p class="typewriter">Transformando ideias em código...</p>
+    <button class="btn">Ver Projetos</button>
+  </section>
+
+  <section id="sobre">
+    <h3>Sobre</h3>
+    <div class="card">
+      <p>Sou o CodeSpecter 👻 — apaixonado por programação, tecnologia e inovação.  
+      Este é meu espaço para compartilhar projetos e experiências.</p>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <h3>Projetos</h3>
+    <div class="card">Projeto 1 - Landing Page moderna</div>
+    <div class="card">Projeto 2 - Dashboard interativo</div>
+    <div class="card">Projeto 3 - Sistema de login com autenticação</div>
+  </section>
+
+  <section id="contato">
+    <h3>Contato</h3>
+    <div class="card">
+      <p>Email: <strong>samukagamerr90@gmail.com</strong></p>
+      <p>Discord: <strong>comarugoat</strong></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 CodeSpecter - Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
+
